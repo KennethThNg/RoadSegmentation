@@ -8,3 +8,12 @@ First meeting:
 - Look on the templates provided from the ML course
 - Use CNN as basis model and use assemble learning (watch out on the overfitting)
 - Find relevant code source with CNN (use for text or image classification)
+
+
+Relevant sources:
+http://adventuresinmachinelearning.com/convolutional-neural-networks-tutorial-tensorflow/
+https://medium.com/@ksusorokina/image-classification-with-convolutional-neural-networks-496815db12a8
+http://neuralnetworksanddeeplearning.com/chap6.html#introducing_convolutional_networks
+
+https://www.tensorflow.org/tutorials/images/deep_cnn
+https://github.com/tensorflow/models/blob/master/samples/outreach/blogs/segmentation_blogpost/image_segmentation.ipynb
