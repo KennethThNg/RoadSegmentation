@@ -10,7 +10,8 @@ First meeting:
 - Find relevant code source with CNN (use for text or image classification)
 
 
-Relevant sources:
+Relevant source.
+
 http://adventuresinmachinelearning.com/convolutional-neural-networks-tutorial-tensorflow/
 https://medium.com/@ksusorokina/image-classification-with-convolutional-neural-networks-496815db12a8
 http://neuralnetworksanddeeplearning.com/chap6.html#introducing_convolutional_networks
