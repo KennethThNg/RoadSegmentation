@@ -18,3 +18,4 @@ http://neuralnetworksanddeeplearning.com/chap6.html#introducing_convolutional_ne
 
 https://www.tensorflow.org/tutorials/images/deep_cnn
 https://github.com/tensorflow/models/blob/master/samples/outreach/blogs/segmentation_blogpost/image_segmentation.ipynb
+https://www.kaggle.com/pouryaayria/convolutional-neural-networks-tutorial-tensorflow
