@@ -8,6 +8,7 @@ First meeting:
 - Look on the templates provided from the ML course
 - Use CNN as basis model and use assemble learning (watch out on the overfitting)
 - Find relevant code source with CNN (use for text or image classification)
+- Get familiar with U-Net. 
 
 
 Relevant source.
