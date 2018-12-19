@@ -1,24 +1,117 @@
-This readme is for the moment to have an update on the progress of the project.
-First meeting:
-- Have a first look on the data
-- Look on other project on image segmentation, classification
-- Have a look on Kaggles to see the best models for segmentation
-- Get familiar with neural networks, CNN
-- Get familiar with TensorFlow
-- Look on the templates provided from the ML course
-- Use CNN as basis model and use assemble learning (watch out on the overfitting)
-- Find relevant code source with CNN (use for text or image classification)
-- Get familiar with U-Net. 
+# CS-433 Machine Learning - Project 1
 
 
-Relevant source.
+The first project developed for the Machine Learning course, was about predicting from a data set wether a particle was a Higgs Boson based on thirty features. The project was run like a Kaggle Competition.
 
-http://adventuresinmachinelearning.com/convolutional-neural-networks-tutorial-tensorflow/
-https://medium.com/@ksusorokina/image-classification-with-convolutional-neural-networks-496815db12a8
-http://neuralnetworksanddeeplearning.com/chap6.html#introducing_convolutional_networks
+The content of this project is composed of different parts:
 
-https://www.tensorflow.org/tutorials/images/deep_cnn
-https://github.com/tensorflow/models/blob/master/samples/outreach/blogs/segmentation_blogpost/image_segmentation.ipynb
-https://www.kaggle.com/pouryaayria/convolutional-neural-networks-tutorial-tensorflow
-https://medium.com/vooban-ai/satellite-image-segmentation-a-workflow-with-u-net-7ff992b2a56e
-https://www.kaggle.com/keegil/keras-u-net-starter-lb-0-277
+
+- the folder `data` contains all the data needed for the project. It is composed of three files:
+
+   
+- `sample-submission.csv`: this shows the format in which you have to present your predictions.
+   
+- `test.csv`: the data set used to make predictions from the model.
+   
+- `train.csv`: the data set used for training the model.
+
+
+- the folder `report` contains one item:
+
+    
+- `report.pdf`: the report in PDF format.
+ 
+- the folder `notebooks` contains two items:
+
+    
+- `run_submission.ipynb` notebook that permit to run the run py-file.
+
+
+- `cross_validation.ipynb` notebook that provides a cross validation demonstration.
+
+
+- the folder `src` contains several py-files:
+
+   
+- **`costs.py`**: contains all the necessary functions to compute the loss of different models.
+      
+- `compute_mse`: computes the cost using MSE.
+
+- `compute_logistic_loss`: computes the cost for logistic regression.      
+- `compute_neg_log_likelihood`: computes the cost by negative log likelihood.
+
+ 
+  
+- **`cross_validation.py`**: contains all the necessary functions to perfom a cross validation.
+      
+- `cross_validation_per_fold`: performs cross validation based on given model.
+      
+- `cross_validation_per_masks`: call 'cross_validation_per_fold' with ranges of parameters to get the best combination.
+      
+- `split`: builds k indices for k-fold cross validation.
+
+   
+
+- **`features_eng.py`**: contains features engineering functions used.
+        
+- `fit_degree_expansion`: creates the polynomial expansion for a set of features.
+      
+- `fit_invert_log`: creates inverse log values of features of positive one and creates polynomial expansion for those new features.
+
+        
+- `transform_invert_log`: creates inverse log values for given columns features.
+
+   
+
+- **`complementaries_functions.py`**: contains complementary functions.
+  
+- `sigmoid`: sigmoid function.
+    
+- `batch_iter`: generates a minibatch iterator for a dataset.
+      
+- `init_w`: initializes the weight vector around 0.
+
+
+- **`preprocess.py`**: contains complementary functions.
+  
+- `get_missing_masks`: get masks for splitting columns.
+    
+- `fit_remove_constant_col`: removes constant columns of the train set.
+ 
+- `transform_remove_constant_col`: removes columns of the test set which are assumed to be constant.
+      
+- `fit_standardize`: standardizes columns.
+
+- `transform_standardize`: standardizes columns with given fit mean and std.
+
+
+- **`proj1_helpers.py`**: predefined help functions for the project slightly modified.
+      
+- `load_csv_data`: loads the data from CSV.
+      
+- `predict_labels`: predicts label based on data matrix and weight vector compatible with Kaggle.
+      
+- `create_csv_submission`: creates CSV file for submission.
+
+   
+
+
+- **`implementations.py`**: contains all regression methods used for this project.
+      
+- `least_squares_GD`: linear regression using gradient descent.
+      
+- `least_squares_SGD`: linear regression using stochastic gradient descent.
+      
+- `least_squares`: least squares regression using normal equations.
+      
+- `ridge_regression`: ridge regression using normal equations.
+      
+- `logistic_regression`: logistic regression using gradient descent.
+      
+- `reg_logistic_regression_SGD`: regularized logistic regression using gradient descent.
+
+   
+
+- **`run.py`**: contains the procedure that generates the exact CSV file submitted on Kaggle.
+   
+
