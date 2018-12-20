@@ -1,11 +1,10 @@
 # CS-433 Machine Learning - Project 2
 
 
-For the second project in the CS-433 Machine Learning course we choose to do the Road Segmentation task, with the objective of classifying aerial images and determine whether the pixels contain a road segment or background. The project was run like a CrowdAI Competition.
+For the second project in the CS-433 Machine Learning course we choose to do the Road Segmentation task, with the objective of classifying aerial images and determine whether the pixels contain a road segment or background. The project was run like a CrowdAI Competition.  
 
-
-CrowdAI submission username: BriceRepond
-CrowdAI submission ID: TBD
+CrowdAI submission username: BriceRepond  
+CrowdAI submission ID: TBD  
 Score for the model given in this submission: 0.818 
 
 ## Libraries
@@ -50,10 +49,10 @@ The training and test data are available for download at the CrowdAI-platform at
       Functions for the CNN model:
       - `conv2d`
       - `pooling`
-      - 'dense'
-      - 'flattening'
-      - 'activation'
-      - 'optimizer_choice'
+      - `dense`
+      - `flattening`
+      - `activation`
+      - `optimizer_choice`
       
     - **`model.py`**
       - `Class CNN`: The CNN class.
