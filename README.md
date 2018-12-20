@@ -1,9 +1,9 @@
-# CS-433 Machine Learning - Project 1
+# CS-433 Machine Learning - Project 2
 
 
-The first project developed for the Machine Learning course, was about predicting from a data set wether a particle was a Higgs Boson based on thirty features. The project was run like a Kaggle Competition.
+For the second project in the CS-433 Machine Learning course we choose to do the Road Segmentation task, with the objective of classifying aerial images and determine whether the pixels contain a road segment or background. The project was run like a CrowdAI Competition.
 
-The content of this project is composed of different parts:
+The content of this project is composed of the following parts:
 
 
 - the folder `data` contains all the data needed for the project. It is composed of three files:
