@@ -3,9 +3,8 @@
 
 For the second project in the CS-433 Machine Learning course we choose to do the Road Segmentation task, with the objective of classifying aerial images and determine whether the pixels contain a road segment or background. The project was run like a CrowdAI Competition.  
 
-CrowdAI submission username: BriceRepond  
-CrowdAI submission ID: TBD  
-Score for the model given in this submission: 0.818 
+CrowdAI submission username: BriceRepond   
+Score for the model given in this submission: 0.818 (NB. this is not the best score of 0.819 present on the CrowdAI-leaderboard)
 
 ## Libraries
 TensorFlow version 1.12.0
@@ -62,6 +61,12 @@ The training and test data are available for download at the CrowdAI-platform at
          - `train`: Train a CNN instance
     - **`parameters.py`** 
       - Contains the parameters used to produce the CrowdAI score of 0.818.
+      - `TRAINING_SIZE`: number of training images.
+      - `TEST_SIZE`: number of test images.
+      - `RESTORE_MODEL`: Set to TRUE if a previous model should be restored (This does not work with the submitted code).
+      - `WINDOW_SIZE`: set the window_size parameter.
+      - `SAVER_FILENAME`: Name of the file you want to restore or save as.
+      - `NUM_EPOCHS`: Set the number of epochs to run.
     - **`preprocess.py`**     
       - `process`: Process raw data.
       - `data_augmentation`: Augmentation of the data set by performing six flips.
