@@ -5,32 +5,30 @@ For the second project in the CS-433 Machine Learning course we choose to do the
 
 The content of this project is composed of the following parts:
 
-
-- the folder `data` contains all the data needed for the project. It is composed of three files:
-
+- the folder `data` that should contain all the data needed for the project. It is composed of two subfolders:
    
-- `sample-submission.csv`: this shows the format in which you have to present your predictions.
+- `test_set_images`: the data set used to make predictions from the model, provided by the CrowdAI dataset in **test_set_images_zip**
    
-- `test.csv`: the data set used to make predictions from the model.
-   
-- `train.csv`: the data set used for training the model.
+- `training`: the data set used for training the model. It is splitted into two subfolders:
+   - `groundtruth`: the groundtruth images provided by the CrowdAI dataset in **training_zip**
+   - `images`: the satelite training images provided by the CrowdAI dataset in **training_zip**.
 
+The training and test data are available for download at the CrowdAI-platform and we therefore chose not to upload it as part of the submission.
 
 - the folder `report` contains one item:
-
     
 - `report.pdf`: the report in PDF format.
  
-- the folder `notebooks` contains two items:
+- the folder `models` contains one subfolder:
+   - the folder `10_epochs_54_window_size` that contains the weights and related meta data that was created when running the model that provided the results giving the 0.819 score on the CrowdAI-platform. Due to problems with trying to restore this model, these files are not used.  
+
+- the folder `src` that contains several py-files and one ipnyb-file:
+
+   - **`helpers.py`**
+      - `compute_mse` 
 
     
-- `run_submission.ipynb` notebook that permit to run the run py-file.
-
-
-- `cross_validation.ipynb` notebook that provides a cross validation demonstration.
-
-
-- the folder `src` contains several py-files:
+   - `run.ipynb` notebook that permit to run the CNN model
 
    
 - **`costs.py`**: contains all the necessary functions to compute the loss of different models.
