@@ -31,7 +31,7 @@ The training and test data are available for download at the CrowdAI-platform at
 
 - the folder `report` contains one item:
     
-- `report.pdf`: the report in PDF format.
+   - `report.pdf`: the report in PDF format.
  
 - the folder `models` contains one subfolder:
    - the folder `10_epochs_54_window_size` that contains the weights and related meta data of the pre-trained model that was created when running the model that provided the results giving the 0.818 score on the CrowdAI-platform. Due to problems with trying to restore this model, these files are not used.  
