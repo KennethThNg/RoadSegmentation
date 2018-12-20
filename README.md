@@ -70,6 +70,9 @@ The training and test data are available for download at the CrowdAI-platform at
     - **`preprocess.py`**     
       - `process`: Process raw data.
       - `data_augmentation`: Augmentation of the data set by performing six flips.
+    - **`restore_submission.py`**  
+      - `submission_per_patch`: Gives the prediction per patch. 
+      - `tf_restore_predict`:  Provide a submission csv-file
     - **`run.ipynb`** notebook that permit to run the CNN model.
       - Also contains ALL the content from the **model.py** and the **helpers.py**. This is to make sure that the CNN-model runs from scratch when running all the cells in the notebook. When trying to 1) first restore the model (as mentioned earlier), and 2) When 1) did not work, run the CNN model from scartch, we encounter import problems between the files. For this reason we choose to be completely sure of the model running by copying the content from the two abovementioned files.
 
