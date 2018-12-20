@@ -3,6 +3,17 @@
 
 For the second project in the CS-433 Machine Learning course we choose to do the Road Segmentation task, with the objective of classifying aerial images and determine whether the pixels contain a road segment or background. The project was run like a CrowdAI Competition.
 
+
+CrowdAI submission username: BriceRepond
+Score for the model given in this submission: 0.818 
+## Libraries
+
+
+
+## How to run the model
+
+
+## File description
 The content of this project is composed of the following parts:
 
 - the folder `data` that should contain all the data needed for the project. It is composed of two subfolders:
@@ -13,7 +24,7 @@ The content of this project is composed of the following parts:
    - `groundtruth`: the groundtruth images provided by the CrowdAI dataset in **training_zip**
    - `images`: the satelite training images provided by the CrowdAI dataset in **training_zip**.
 
-The training and test data are available for download at the CrowdAI-platform and we therefore chose not to upload it as part of the submission.
+The training and test data are available for download at the CrowdAI-platform at this ([Link](https://www.crowdai.org/challenges/epfl-ml-road-segmentation/dataset_files "Link") and we therefore chose not to upload it as part of the submission.
 
 - the folder `report` contains one item:
     
